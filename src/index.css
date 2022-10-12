@@ -336,4 +336,10 @@ a {
   form {
     width: 100%;
   }
+  h2 {
+    font-size: 1.5rem;
+    padding: 5px;
+    max-width: 100%;
+    margin: 0 auto;
+  }
 }
