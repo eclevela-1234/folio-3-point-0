@@ -55,10 +55,10 @@ h6 {
 
 h1 {
   font-size: 2.25rem;
-  font-weight: 550;
-  font-style: oblique;
+  /* font-style: oblique; */
   color: var(--darker);
-  text-shadow: 0 0 8px;
+  text-shadow: 0 0 8px var(--secondary);
+  
 }
 
 h2 {
@@ -324,7 +324,7 @@ a {
 
 #profileImg {
   max-width: 200px;
-  border-radius: 25% 10%;
+  border-radius: 20% 10% 50% 10%;
 }
 
 @media screen and (max-width: 980px) {
