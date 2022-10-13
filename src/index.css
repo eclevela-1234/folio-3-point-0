@@ -62,7 +62,8 @@ h1 {
 }
 
 #blurb {
-  background-color: rgba(49.92%, 50.2%, 56.7%, 0.4);
+  /* background-color: rgba(49.92%, 50.2%, 56.7%, 0.4); */
+  background-color: rgba(95%, 95%, 95%, .4);
   padding: 10px;
   border-radius: 10px;
 }
