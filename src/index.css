@@ -330,7 +330,7 @@ a {
 
 #profileImg {
   max-width: 200px;
-  border-radius: 20% 10% 50% 10%;
+  border-radius: 20% 30% 60% 30%;
 }
 
 @media screen and (max-width: 980px) {
