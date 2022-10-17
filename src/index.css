@@ -142,9 +142,9 @@ img {
   max-width: 100%;
 }
 
-span[role="img"] {
-  cursor: default;
-}
+/* span[role="img"] {
+  /* cursor: default; */
+/* } */
 
 form {
   width: 50%;
@@ -359,7 +359,7 @@ article {
   position: relative;
   align-items: center;
   vertical-align: baseline;
-  cursor: pointer;
+  /* cursor: pointer; */
 }
 
 .caption {
