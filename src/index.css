@@ -288,16 +288,20 @@ textarea {
 .modalContainer {
   background: var(--darker);
   border-radius: 5px;
-  max-width: 100%;
-  margin: 50px auto;
+  max-height: 95vh;
+  margin: 20px auto;
   padding: 15px;
-  width: 960px;
+  width: 800px;
 }
 
 .modalTitle {
+  color: var(--light);
   font-size: 18px;
   font-weight: 600;
   margin-bottom: 25px;
+}
+.modalImg {
+  max-height: 70vh;
 }
 
 button {
@@ -349,6 +353,25 @@ footer i {
 
 h6 i {
   font-size: 1rem;
+}
+article {
+  margin: 1rem 1rem 1rem 0;
+  position: relative;
+  align-items: center;
+  vertical-align: baseline;
+}
+
+.caption {
+  display: inline-block;
+  position: absolute;
+  padding: 1rem;
+  border: var(--primary-color) 2px solid;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  bottom: 50px;
+  left: 0;
+  color: var(--light);
+  background-color: var(--secondary);
 }
 
 @media screen and (max-width: 980px) {
