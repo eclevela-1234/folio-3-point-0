@@ -269,8 +269,9 @@ textarea {
 .img-thumbnail {
   width: auto;
   height: 300px;
-  margin-bottom: 50px;
   cursor: pointer;
+  border-radius: 5% 5% 20% 5%;
+  box-shadow: 0 0 10px;
 }
 
 .modalBackdrop {
@@ -331,6 +332,7 @@ a {
 #profileImg {
   max-width: 200px;
   border-radius: 20% 30% 60% 30%;
+  box-shadow: 0 0 10px;
 }
 
 .footer {
@@ -343,6 +345,10 @@ footer i {
 
 #copy {
   text-align: center;
+}
+
+h6 i {
+  font-size: 1rem;
 }
 
 @media screen and (max-width: 980px) {
