@@ -11,7 +11,7 @@ function About() {
         style={{ width: "100%" }}
         alt="profile"
       />
-      <h1 classname="my-2" id="about">
+      <h1 className="my-2" id="about">
         The Full Stack
       </h1>
       <div id="blurb" className="my-2">

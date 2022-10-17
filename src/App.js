@@ -4,14 +4,15 @@ import About from "./components/About";
 import Portfolio from "./components/Portfolio";
 import ContactForm from "./components/Contact";
 import Resume from "./components/Resume";
+import { capitalizeFirstLetter } from "./utils/helpers";
 
 function App() {
   const [categories] = useState([
-    { name: "about Me"},
+    { name: "about Me", description: ""},
     { name: "portfolio",
       description:
-        "Her are some of my best projects to date!"},
-    { name: "resume"}
+        "Here are some of my best projects to date!"},
+    { name: "resume", description: ""}
 
   ]);
   const [contactSelected, setContactSelected] = useState(false);
@@ -19,18 +20,18 @@ function App() {
   const [currentCategory, setCurrentCategory] = useState(categories[0]);
 
   const renderPage = () => {
-    switch (currentCategory) {
+    console.log("currentCat", currentCategory);
+    switch (currentCategory.name) {
       case "about Me":
-        return <About />;
+        return <About currentCategory={currentCategory} />;
       case "portfolio":
-        return <Portfolio />;
-      case "contact":
-        return <ContactForm />;
+        return <Portfolio currentCategory={currentCategory}/>;
+      // case "contact":
+      //   return <ContactForm currentCategory={currentCategory}/>;
       case "resume":
-        return <Resume />;
-
+        return <Resume currentCategory={currentCategory}/>;
       default:
-        return <About />;
+        return <About currentCategory={currentCategory}/>;
     }
   };
   return (
