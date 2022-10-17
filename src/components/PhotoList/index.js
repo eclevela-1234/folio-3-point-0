@@ -75,12 +75,12 @@ const PhotoList = ({ category }) => {
         )}
       <div className="flex-row">
         {currentPhotos.map((image, i) => (
-          <article>
+          <article onClick={() => toggleModal(image, i)}>
           <img
             src={require(`../../assets/small/${category}/${i}.jpg`)}
             alt={image.name}
             className="img-thumbnail"
-            onClick={() => toggleModal(image, i)}
+            
             key={image.name}
           />
           <div className="caption">

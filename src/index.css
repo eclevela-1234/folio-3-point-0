@@ -269,7 +269,7 @@ textarea {
 .img-thumbnail {
   width: auto;
   height: 300px;
-  cursor: pointer;
+
   border-radius: 5% 5% 20% 5%;
   box-shadow: 0 0 10px;
 }
@@ -355,23 +355,26 @@ h6 i {
   font-size: 1rem;
 }
 article {
-  margin: 1rem 1rem 1rem 0;
+  margin: 1rem 2rem 1rem 0;
   position: relative;
   align-items: center;
   vertical-align: baseline;
+  cursor: pointer;
 }
 
 .caption {
   display: inline-block;
   position: absolute;
   padding: 1rem;
-  border: var(--primary-color) 2px solid;
+  border-top: var(--dark) 1px solid;
+  border-right: var(--dark) 1px solid;
+  border-bottom: var(--dark) 1px solid;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
   bottom: 50px;
   left: 0;
   color: var(--light);
-  background-color: var(--secondary);
+  background-color: var(--primary);
 }
 
 @media screen and (max-width: 980px) {
