@@ -4,6 +4,7 @@ import About from "./components/About";
 import Portfolio from "./components/Portfolio";
 import ContactForm from "./components/Contact";
 import Resume from "./components/Resume";
+import Footer from "./components/Footer";
 import { capitalizeFirstLetter } from "./utils/helpers";
 
 function App() {
@@ -50,6 +51,7 @@ function App() {
         </>
         ) : (<ContactForm/>)}
       </main>
+      <Footer />
     </div>
   );
 }

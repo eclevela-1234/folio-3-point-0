@@ -313,7 +313,7 @@ button {
 
 a {
   border-radius: 5px;
-  color: var(--primary);
+  color: var(--secondary);
   font-weight: 600;
   padding: 2px 4px;
   margin-left: -2px;
@@ -331,6 +331,18 @@ a {
 #profileImg {
   max-width: 200px;
   border-radius: 20% 30% 60% 30%;
+}
+
+.footer {
+  justify-content: center;
+}
+
+footer i {
+  font-size: 3rem;
+}
+
+#copy {
+  text-align: center;
 }
 
 @media screen and (max-width: 980px) {

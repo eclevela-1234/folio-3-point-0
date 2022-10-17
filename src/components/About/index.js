@@ -11,6 +11,12 @@ function About() {
         style={{ width: "100%" }}
         alt="profile"
       />
+      <h1 className="my-2" id="about">Hello world</h1>
+      <div id="blurb" className="my-2">
+      I am an independent data analyst/developer and double boot camp graduate (almost)! I specialize in full-stack JavaScript based coding languages and also have a practical understanding of Python. I am seeking an opportunity to apply my skills, work ethic, business acumen and experience in a more technical role in data science or coding.
+      </div>
+
+
       <h1 className="my-2" id="about">
         The Full Stack
       </h1>
