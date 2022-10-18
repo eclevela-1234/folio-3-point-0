@@ -2,63 +2,46 @@ import React, { useState } from "react";
 // import Modal from "../Modal";
 
 const PhotoList = ({ category }) => {
-  const [isModalOpen, setIsModalOpen] = useState(false);
-  const [currentPhoto, setCurrentPhoto] = useState();
+  // const [isModalOpen, setIsModalOpen] = useState(false);
+  // const [currentPhoto, setCurrentPhoto] = useState();
   const [photos] = useState([
     {
-      name: "Grocery aisle",
+      name: "Random Project Generator",
       category: "portfolio",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie",
+      repo: "https://github.com/eclevela-1234/Random-Project-Generator",
+      app: "https://eclevela-1234.github.io/Random-Project-Generator" 
     },
     {
-      name: "Grocery booth",
+      name: "Express Note Taker",
       category: "portfolio",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie",
+      repo: "https://github.com/eclevela-1234/Express-Note-Taker",
+      app: "https://agile-dawn-36237.herokuapp.com/"
+
     },
     {
-      name: "Building exterior",
+      name: "Portfolio Designer",
       category: "portfolio",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie",
+      repo: "https://github.com/eclevela-1234/portfolio-designer-2",
+      app: "https://peaceful-reef-87519.herokuapp.com/login"
     },
     {
-      name: "Restaurant table",
+      name: "My Team App",
       category: "portfolio",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie",
+      repo: "https://github.com/eclevela-1234/My-Team-App",
+      app: ""
     },
     {
-      name: "Cafe interior",
+      name: "Reactions",
       category: "portfolio",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie",
+      repo: "https://github.com/eclevela-1234/Reactions",
+      app: ""
     },
-    // {
-    //   name: "Cat green eyes",
-    //   category: "portfolio",
-    //   description:
-    //     "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie",
-    // },
-    // {
-    //   name: "Green parrot",
-    //   category: "portfolio",
-    //   description:
-    //     "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie",
-    // },
-    // {
-    //   name: "Yellow macaw",
-    //   category: "portfolio",
-    //   description:
-    //     "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie",
-    // },
-    // {
-    //   name: "Pug smile",
-    //   category: "portfolio",
-    //   description:
-    //     "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie",
-    // },
+    {
+      name: "Taskmaster Pro",
+      category: "portfolio",
+      repo: "https://github.com/eclevela-1234/taskmaster-pro",
+      app: "https://eclevela-1234.github.io/taskmaster-pro/"
+    },
   ]);
   
   const currentPhotos = photos.filter((photo) => photo.category === category);
@@ -85,7 +68,16 @@ const PhotoList = ({ category }) => {
             key={image.name}
           />
           <div className="caption">
-          <h4>{image.name}|Github</h4>
+          <h5>{image.name}</h5>
+          {!image.app.length ? (
+            <>
+            <p><a href={image.repo}>Github Repo</a></p>
+            </>
+          ) : (
+            <>
+            <p><a href={image.repo}>Repo</a><span>|</span><a href={image.app}>App</a></p>
+            </>
+          )}
           
           </div>
           </article>
