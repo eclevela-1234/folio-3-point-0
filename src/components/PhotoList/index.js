@@ -75,7 +75,7 @@ const PhotoList = ({ category }) => {
             </>
           ) : (
             <>
-            <p><a href={image.repo}>Repo</a><span>|</span><a href={image.app}>App</a></p>
+            <p><a href={image.repo} target={`_blank`}>Repo</a><span>|</span><a href={image.app} target={`_blank`}>App</a></p>
             </>
           )}
           
