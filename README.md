@@ -4,6 +4,8 @@
 
 **Another attempt at a professional resume, this time using React. Lost of thinks learned on this intro to React assignment. THe code could use some refactoring but overall I think my design skilss and ability to manipulate CSS are improving!**
 
+![screenshot](./assets/images/screenshot.png)
+
 ## Table of Contents
 
 
@@ -18,7 +20,7 @@
 
 ## Link to Deployed Site
 
-tbd
+[https://eclevela-1234.github.io/folio-3-point-0/](https://eclevela-1234.github.io/folio-3-point-0/)
 ## Usage Information
 
 This website can be used to view some of my best projects to date
