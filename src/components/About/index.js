@@ -3,17 +3,18 @@ import profileImage from "../../assets/cover/profileimage.jpg";
 
 function About() {
   return (
-    <section className="my-2">
+    <section>
+      <h1>About me</h1>
       <img
         src={profileImage}
         id="profileImg"
-        className=""
+        className="my-5"
         style={{ width: "100%" }}
         alt="profile"
       />
-      <h1 className="my-2" id="about">Hello world</h1>
+      {/* <h1 className="my-2" id="about">Hello world</h1> */}
       <div id="blurb" className="my-2">
-      I am an independent data analyst/developer and double boot camp graduate (almost)! I specialize in full-stack JavaScript based coding languages and also have a practical understanding of Python. I am seeking an opportunity to apply my skills, work ethic, business acumen and experience in a more technical role in data science or coding.
+      I am a full stack developer/data analyst and double boot camp graduate (almost)! I specialize in JavaScript based coding languages and also have a practical understanding of Python. I am seeking an opportunity to apply my skills, work ethic, business acumen and experience in a more technical role in data science or coding.
       </div>
 
 

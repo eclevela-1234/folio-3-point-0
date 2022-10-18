@@ -12,7 +12,7 @@ function App() {
     { name: "about Me", description: ""},
     { name: "portfolio",
       description:
-        "Here are some of my best projects to date!"},
+        ""},
     { name: "resume", description: ""}
 
   ]);
@@ -27,8 +27,6 @@ function App() {
         return <About currentCategory={currentCategory} />;
       case "portfolio":
         return <Portfolio currentCategory={currentCategory}/>;
-      // case "contact":
-      //   return <ContactForm currentCategory={currentCategory}/>;
       case "resume":
         return <Resume currentCategory={currentCategory}/>;
       default:

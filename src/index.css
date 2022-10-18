@@ -351,6 +351,15 @@ footer i {
   text-align: center;
 }
 
+#resume {
+  text-align: center;
+}
+
+#resume ul li {
+  margin: 0;
+  padding: 0;
+}
+
 h6 i {
   font-size: 1rem;
 }
