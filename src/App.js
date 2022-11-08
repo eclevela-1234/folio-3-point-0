@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Nav from "./components/Nav";
+import Tabs from "./components/Nav";
 import About from "./components/About";
 import Portfolio from "./components/Portfolio";
 import ContactForm from "./components/Contact";
@@ -12,14 +12,20 @@ function App() {
 
   return (
     <Router>
-      <div className="flex-column justify-center min-100-vh">
-        <Header />
+      <div className="min-100-vh">
+        
         <div className="container">
+
+          <Tabs />
           <Routes>
             <Route path="/" element={<About />} />
-            <Route path="/" element={<About />} />
+            <Route path="/portfolio" element={<Portfolio />} />
+            <Route path="/resume" element={<Resume />} />
+            <Route path="/contact" element={<ContactForm />} />
           </Routes>
+          <Footer/>
         </div>
+        
       </div>
     </Router>
   )
