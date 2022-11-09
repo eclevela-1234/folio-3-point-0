@@ -2,10 +2,10 @@ import React, { useEffect } from "react";
 import { capitalizeFirstLetter } from "../../utils/helpers";
 import Nav from 'react-bootstrap/Nav';
 
-function Tabs() {
+function NavTabs() {
   return (
-    <header>
-    <Nav variant="tabs" defaultActiveKey="/">
+    <header className="flex-row w-100">
+    <Nav className="" variant="tabs" defaultActiveKey="/">
       <Nav.Item>
         <Nav.Link href="/">Active</Nav.Link>
       </Nav.Item>
@@ -82,4 +82,4 @@ function Tabs() {
   // );
 }
 
-export default Tabs;
+export default NavTabs;
