@@ -8,11 +8,16 @@
   justify-content: center;
 }
 
-footer a {
+/* footer a {
   display: block;
-}
+} */
 
 #social {
   display: inline-flex;
   flex-direction: row;
+}
+
+i {
+  font-size: 50px;
+  margin: 0 10px 0 10px
 }
