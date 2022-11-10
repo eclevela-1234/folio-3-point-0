@@ -1,16 +1,14 @@
 .App {
   text-align: center;
-  background-image: url("./assets/images/blue-circular-background.jpg");
+  /* background-image: url("./assets/images/blue-circular-background.jpg"); */
   min-height: 100vh;
   display: flex;
   /* flex-direction: column; */
   align-items: center;
   justify-content: center;
+  font-family: 'Courier New', Courier, monospace;
 }
 
-/* footer a {
-  display: block;
-} */
 
 #social {
   display: inline-flex;
@@ -20,4 +18,8 @@
 i {
   font-size: 50px;
   margin: 0 10px 0 10px
+}
+
+#nav {
+  color: black;
 }

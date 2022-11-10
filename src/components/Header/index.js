@@ -5,22 +5,23 @@ function Header() {
 
     return (
       <div id="header">
-    <h2>
+    <h1>
 
     {`< Eliot Cleveland />`}
 
-</h2>
-      <Nav variant="tabs" defaultActiveKey="/home">
+</h1>
+      <Nav id="nav" variant="tabs" defaultActiveKey="/home" className="justify-content-center">
         <Nav.Item>
           <Nav.Link href="/">Active</Nav.Link>
         </Nav.Item>
         <Nav.Item>
-          <Nav.Link eventKey="link-1">Option 2</Nav.Link>
+          <Nav.Link href="/portfolio">Portfolio</Nav.Link>
         </Nav.Item>
         <Nav.Item>
-          <Nav.Link eventKey="disabled" disabled>
-            Disabled
-          </Nav.Link>
+          <Nav.Link href="/resume">Resume</Nav.Link>
+        </Nav.Item>
+        <Nav.Item>
+          <Nav.Link href="/contact">Contact</Nav.Link>
         </Nav.Item>
       </Nav></div>  
     );

@@ -11,7 +11,7 @@ import Resume from "./components/Resume";
 
 function App() {
   return (
-    <div className="App">
+    <div className="App bg-light">
       <Container>
         <Header />
         <Router>

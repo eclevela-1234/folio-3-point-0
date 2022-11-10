@@ -1,26 +1,27 @@
 import React from "react";
-// import profileImage from "../../assets/cover/profileimage.jpg";
+import profileImage from "../../assets/images/profileimage.jpg";
 
 function About() {
   return (
     <section>
-      <h1>About me</h1>
-      {/* <img
+     
+      <img
         src={profileImage}
         id="profileImg"
-        className="my-5"
-        style={{ width: "100%" }}
+        className="m-3 rounded-circle"
+        style={{ width: "200px" }}
         alt="profile"
-      /> */}
+      />
       {/* <h1 className="my-2" id="about">Hello world</h1> */}
+      <h2>About me</h2>
       <div id="blurb" className="my-2">
-      I am a full stack developer/data analyst and double boot camp graduate (almost)! I specialize in JavaScript based coding languages and also have a practical understanding of Python. I am seeking an opportunity to apply my skills, work ethic, business acumen and experience in a more technical role in data science or coding.
+      I am a full stack developer/data analyst and double boot camp graduate. I specialize in JavaScript based coding languages and also have a practical understanding of Python. I am seeking an opportunity to apply my skills, work ethic, business acumen and experience in a more technical role in data science or coding.
       </div>
 
 
-      <h1 className="my-2" id="about">
+      <h2 className="my-2" id="about">
         The Full Stack
-      </h1>
+      </h2>
       <div id="blurb" className="my-2">
         <p>
           I got my first taste of coding on a TI-82, circa Y2K. I created a few
