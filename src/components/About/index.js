@@ -26,8 +26,7 @@ function About() {
         <p>
           I got my first taste of coding on a TI-82, circa Y2K. I created a few
           simple games and eventually dabbled in Visual Basic. I probably should
-          have stayed the course but life had other plans for me. I've had a
-          successful career as a multi-unit retail manager and earned my MBA
+          have stayed the course but life had other plans for me. Currently I work in retail management. I and earned my MBA
           with an analytics focus in 2020. Completing my data analytics and
           visualization certificate in 2021, I realized my true love of coding.
           My passion is solving real world problems with technical solutions
