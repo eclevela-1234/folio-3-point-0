@@ -1,10 +1,19 @@
+:root {
+  --primary: #8c54ff;
+  --secondary: #61fa4f;
+  --tertiary: #b12704;
+}
+
 .App {
   text-align: center;
-  /* background-image: url("./assets/images/blue-circular-background.jpg"); */
+  background-image: url("./assets/images/blue-circular-background.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
   min-height: 100vh;
   display: flex;
   /* flex-direction: column; */
-  align-items: center;
+  /* align-items: center; */
   justify-content: center;
   font-family: 'Courier New', Courier, monospace;
 }
@@ -20,6 +29,24 @@ i {
   margin: 0 10px 0 10px
 }
 
-#nav {
-  color: black;
+.navtext {
+  text-shadow: 0 0 2px black;
+}
+.navtext:active {
+  color: var(--secondary);
+}
+
+h1 {
+  color: #fafafa;
+  text-shadow: 0 0 8px black;
+}
+
+h2 {
+  font-size: 2.25rem;
+  color: #fafafa;
+  text-shadow: 0 0 8px black;
+  
+}
+#profileImg {
+  box-shadow: 0 0 10px;
 }

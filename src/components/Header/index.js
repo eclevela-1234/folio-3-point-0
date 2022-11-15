@@ -10,18 +10,18 @@ function Header() {
     {`< Eliot Cleveland />`}
 
 </h1>
-      <Nav id="nav" variant="tabs" defaultActiveKey="/home" className="justify-content-center">
+      <Nav variant="tabs" defaultActiveKey="/home" className="justify-content-center">
         <Nav.Item>
-          <Nav.Link href="/">Active</Nav.Link>
+          <Nav.Link className="dark" href="/">About</Nav.Link>
         </Nav.Item>
         <Nav.Item>
-          <Nav.Link href="/portfolio">Portfolio</Nav.Link>
+          <Nav.Link className="navtext" href="/portfolio">Portfolio</Nav.Link>
         </Nav.Item>
         <Nav.Item>
-          <Nav.Link href="/resume">Resume</Nav.Link>
+          <Nav.Link className="navtext" href="/resume">Resume</Nav.Link>
         </Nav.Item>
         <Nav.Item>
-          <Nav.Link href="/contact">Contact</Nav.Link>
+          <Nav.Link className="navtext" href="/contact">Contact</Nav.Link>
         </Nav.Item>
       </Nav></div>  
     );
