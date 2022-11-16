@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { validateEmail } from "../../utils/helpers";
+import { send } from "emailjs-com";
 
 function ContactForm() {
   const [formState, setFormState] = useState({
@@ -32,12 +33,17 @@ function ContactForm() {
 
   function handleSubmit(e) {
     e.preventDefault();
-    console.log(formState);
+    send('service_457ye8d', 'template_5rk1pqp', formState, 'lCsjJd6yV07nOzYOq')
+    .then((result) => {
+        console.log(result.text);
+    }, (error) => {
+        console.log(error.text);
+    });
   }
   // console.log(formState);
   return (
     <section>
-      <h1>Contact me</h1>
+      <h2 className="m-3">Contact me</h2>
       <form id="contact-form" onSubmit={handleSubmit}>
         <div>
           <label className="label" htmlFor="name">Name:</label>
