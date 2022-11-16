@@ -16,7 +16,10 @@
   font-family: 'Courier New', Courier, monospace;
 }
 
-
+.thumbnail {
+  height: 400px;
+  border-radius: 20px;
+}
 #social {
   display: inline-flex;
   flex-direction: row;
@@ -44,6 +47,10 @@ h2 {
   color: #fafafa;
   text-shadow: 0 0 8px black;
   
+}
+h4 a {
+  text-decoration: none;
+  font-weight: bold
 }
 #profileImg {
   box-shadow: 0 0 10px;
