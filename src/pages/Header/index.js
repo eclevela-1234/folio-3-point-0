@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 function Header() {
 
-    const [title] = useState(["About", "Portfolio", "Resume", "Contact"]);
+    // const title = ["About", "Portfolio", "Resume", "Contact"];
 
 
     return (
@@ -16,18 +16,18 @@ function Header() {
 
 </h1>
       <Nav variant="tabs" defaultActiveKey="/home" className="justify-content-center"
-      onSelect={(selectedKey) => <Link to={selectedKey}/>}>
+      onSelect={(selectedKey) => document.title = selectedKey}>
         <Nav.Item>
           <Nav.Link href="/">About</Nav.Link>
         </Nav.Item>
         <Nav.Item>
-          <Nav.Link eventKey="/portfolio">Portfolio</Nav.Link>
+          <Nav.Link eventKey="Portfolio" href="/portfolio">Portfolio</Nav.Link>
         </Nav.Item>
         <Nav.Item>
-          <Nav.Link eventKey="/resume">Resume</Nav.Link>
+          <Nav.Link eventKey="Resume" href="/resume">Resume</Nav.Link>
         </Nav.Item>
         <Nav.Item>
-          <Nav.Link eventKey="/contact">Contact</Nav.Link>
+          <Nav.Link eventKey="Contact Me" href="/contact">Contact</Nav.Link>
         </Nav.Item>
       </Nav></div>  
     );

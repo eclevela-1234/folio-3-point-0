@@ -13,13 +13,13 @@ function About() {
         alt="profile"
       />
       {/* <h1 className="my-2" id="about">Hello world</h1> */}
-      <h2>About me</h2>
+      <h2 className="m-3">About me</h2>
       <div id="blurb" className="my-2">
-      I am a full stack developer/data analyst and double boot camp graduate. I specialize in JavaScript based coding languages and also have a practical understanding of Python. I am seeking an opportunity to apply my skills, work ethic, business acumen and experience in a more technical role in data science or coding.
+      I am a full stack developer/data analyst and double boot camp graduate. I am most familiar with JavaScript based coding languages but also have a practical understanding of Python for data analysis. I am seeking an opportunity to apply my skills, work ethic, business acumen and experience in a more technical role in data science or coding.
       </div>
 
 
-      <h2 className="my-2" id="about">
+      <h2 className="m-3" id="about">
         The Full Stack
       </h2>
       <div id="blurb" className="my-2">
