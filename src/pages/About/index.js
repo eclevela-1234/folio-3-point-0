@@ -1,6 +1,5 @@
 import React from "react";
 import profileImage from "../../assets/images/profileimage.jpg";
-import { useEffect } from "react";
 
 function About() {
 

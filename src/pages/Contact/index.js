@@ -1,11 +1,9 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { validateEmail } from "../../utils/helpers";
 import { send } from "emailjs-com";
 import { Button } from "react-bootstrap";
 
 function ContactForm() {
-  useEffect(() => {
-    document.title = "Portfolio"}, [])
   const [formState, setFormState] = useState({
     name: "",
     email: "",
