@@ -1,8 +1,11 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { validateEmail } from "../../utils/helpers";
 import { send } from "emailjs-com";
+import { Button } from "react-bootstrap";
 
 function ContactForm() {
+  useEffect(() => {
+    document.title = "Portfolio"}, [])
   const [formState, setFormState] = useState({
     name: "",
     email: "",
@@ -33,12 +36,22 @@ function ContactForm() {
 
   function handleSubmit(e) {
     e.preventDefault();
-    send('service_457ye8d', 'template_5rk1pqp', formState, 'lCsjJd6yV07nOzYOq')
-    .then((result) => {
-        console.log(result.text);
-    }, (error) => {
-        console.log(error.text);
-    });
+    const isValid = validateEmail(formState.email);
+    if (isValid) {
+      send(
+        "service_457ye8d",
+        "template_5rk1pqp",
+        formState,
+        "lCsjJd6yV07nOzYOq"
+      ).then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+    }
   }
   // console.log(formState);
   return (
@@ -46,7 +59,9 @@ function ContactForm() {
       <h2 className="m-3">Contact me</h2>
       <form id="contact-form" onSubmit={handleSubmit}>
         <div>
-          <label className="label" htmlFor="name">Name:</label>
+          <label className="label m-1" htmlFor="name">
+            Name:
+          </label>
           <input
             className="form-control"
             type="text"
@@ -56,7 +71,9 @@ function ContactForm() {
           />
         </div>
         <div>
-          <label className="label" htmlFor="email">Email address:</label>
+          <label className="label m-1" htmlFor="email">
+            Email address:
+          </label>
           <input
             className="form-control"
             type="email"
@@ -66,7 +83,9 @@ function ContactForm() {
           />
         </div>
         <div>
-          <label className="label" htmlFor="name">Message:</label>
+          <label className="label m-1" htmlFor="name">
+            Message:
+          </label>
           <textarea
             className="form-control"
             name="message"
@@ -80,7 +99,8 @@ function ContactForm() {
             <p className="error-text">{errorMessage}</p>
           </div>
         )}
-        <button type="submit">Submit</button>
+        <br></br>
+        <Button type="submit">Submit</Button>
       </form>
     </section>
   );
