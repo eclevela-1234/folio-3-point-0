@@ -19,6 +19,7 @@
 .thumbnail {
   height: 400px;
   border-radius: 20px;
+  object-fit: cover;
 }
 #social {
   display: inline-flex;
@@ -56,5 +57,9 @@ h4 a {
   box-shadow: 0 0 10px;
 }
 a {
+  text-decoration: none;
+}
+
+#headline {
   text-decoration: none;
 }

@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { validateEmail } from "../../utils/helpers";
 import { send } from "emailjs-com";
 import { Button } from "react-bootstrap";
+import profileImage from "../../assets/images/profileimage.jpg";
 
 function ContactForm() {
   const [formState, setFormState] = useState({
@@ -44,6 +45,8 @@ function ContactForm() {
       ).then(
         (result) => {
           console.log(result.text);
+          alert("Your message has been recieved. Thanks for reaching out!");
+          setFormState({ name: "", email: "", message: "" });
         },
         (error) => {
           console.log(error.text);
@@ -53,8 +56,23 @@ function ContactForm() {
   }
   // console.log(formState);
   return (
-    <section>
-      <h2 className="m-3">Contact me</h2>
+    <div className="row">
+      <h2 className="my-3">Contact me</h2>
+      <section className="col-12 col-md-6 d-block">
+      <img
+        src={profileImage}
+        id="profileImg"
+        className="m-3 rounded-circle"
+        style={{ width: "200px" }}
+        alt="profile"
+      /><br></br>
+      <h2>Email Eliot</h2>
+      <br></br>
+      
+      <a href="mailto:eliotclevelandmba@gmail.com"><Button className="text-light">eliotclevelandmba@gmail</Button></a>
+      </section>
+    <section className="col-12 col-md-6">
+      
       <form id="contact-form" onSubmit={handleSubmit}>
         <div>
           <label className="label m-1" htmlFor="name">
@@ -87,7 +105,7 @@ function ContactForm() {
           <textarea
             className="form-control"
             name="message"
-            rows="5"
+            rows="4"
             defaultValue={message}
             onBlur={handleChange}
           />
@@ -96,11 +114,13 @@ function ContactForm() {
           <div>
             <p className="error-text">{errorMessage}</p>
           </div>
-        )}
+        )} 
         <br></br>
         <Button type="submit">Submit</Button>
+       
       </form>
     </section>
+    </div>
   );
 }
 

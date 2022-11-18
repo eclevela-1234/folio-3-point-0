@@ -10,7 +10,7 @@ import NoMatch from "../pages/NoMatch";
 function NavbarEliot() {
   return (
     <div id="header">
-      <h1>{`< Eliot Cleveland />`}</h1>
+      <a href="folio-3-point-0" id="headline"><h1>{`< Eliot Cleveland />`}</h1></a>
       <Router>
         <Nav variant="tabs" className="justify-content-center">
           <Nav.Item>

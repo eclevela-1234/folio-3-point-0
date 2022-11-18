@@ -50,7 +50,7 @@ function Portfolio() {
           src={require(`../../assets/images/${i}.png`)}
           alt={image.name}
         />
-        <Carousel.Caption className="bg-light bg-opacity-75 border border-dark rounded">
+        <Carousel.Caption className="bg-light border border-dark rounded">
           <h3 className="fw-bold">{image.name}</h3>
           {!image.app.length ? (
                 <>
