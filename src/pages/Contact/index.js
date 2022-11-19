@@ -66,6 +66,7 @@ function ContactForm() {
         style={{ width: "200px" }}
         alt="profile"
       /><br></br>
+      
       <h2>Email Eliot</h2>
       <br></br>
       
