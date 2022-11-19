@@ -14,6 +14,7 @@ function Resume() {
         <p>JavaScript</p>
         <p>ES6+</p>
         <p>HTML5</p>
+        <p>CSS3</p>
         <p>Python</p>
         <p>SQL</p>
         <p>NoSQL</p>
