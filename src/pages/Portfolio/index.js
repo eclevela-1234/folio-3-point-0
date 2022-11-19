@@ -54,16 +54,19 @@ function Portfolio() {
   return (
     <div>
       <h2 className="m-3">Portfolio</h2>
-      <Carousel variant="dark">
+      <div className="row">
+    
+      <Carousel variant="dark" className="col-md-8 m-auto">
         {photos.map((image, i) => 
         <Carousel.Item interval={5000}>
         <img
-          className="d-block w-100 thumbnail"
+          className="w-100 thumbnail"
           src={require(`../../assets/images/${i}.png`)}
           alt={image.name}
         />
         <Carousel.Caption className="bg-light border border-dark rounded">
           <h3 className="fw-bold">{image.name}</h3>
+          <p>{image.description}</p>
           {!image.app.length ? (
                 <>
                   <h4>
@@ -87,6 +90,7 @@ function Portfolio() {
       </Carousel.Item>)}
       
     </Carousel>
+    </div>
     </div>
   );
 }

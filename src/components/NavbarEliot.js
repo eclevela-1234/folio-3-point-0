@@ -14,7 +14,7 @@ function NavbarEliot() {
       <Router>
         <Nav variant="tabs" className="justify-content-center">
           <Nav.Item>
-            <Nav.Link as={Link} to={"folio-3-point-0"} className="text-light fw-bold">
+            <Nav.Link as={Link} to={"folio-3-point-0"} className="text-light fw-bold" style={{textShadow: '0 0 8px black'}}>
               About
             </Nav.Link>
           </Nav.Item>
@@ -23,17 +23,18 @@ function NavbarEliot() {
               as={Link}
               to={"folio-3-point-0/portfolio"}
               className="text-light fw-bold"
+              style={{textShadow: '0 0 8px black'}}
             >
               Portfolio
             </Nav.Link>
           </Nav.Item>
           <Nav.Item>
-            <Nav.Link as={Link} to={"folio-3-point-0/resume"} className="text-light fw-bold">
+            <Nav.Link as={Link} to={"folio-3-point-0/resume"} className="text-light fw-bold" style={{textShadow: '0 0 8px black'}}>
               Resume
             </Nav.Link>
           </Nav.Item>
           <Nav.Item>
-            <Nav.Link as={Link} to={"folio-3-point-0/contact"} className="text-light fw-bold">
+            <Nav.Link as={Link} to={"folio-3-point-0/contact"} className="text-light fw-bold" style={{textShadow: '0 0 8px black'}}>
               Contact
             </Nav.Link>
           </Nav.Item>
