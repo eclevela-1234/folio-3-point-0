@@ -11,14 +11,14 @@ console.log(props);
   <Modal.Header closeButton>
     <Modal.Title>Modal heading</Modal.Title>
   </Modal.Header>
-  {/* <Modal.Body>
+  <Modal.Body>
     <img
       className="w-100 thumbnail"
       src={require(`../assets/images/${i}.png`)}
       alt={image.name}
     />
     <p>{image.description}</p>
-  </Modal.Body> */}
+  </Modal.Body>
   <Modal.Footer>
     <Button variant="secondary" onClick={handleClose}>
       Close

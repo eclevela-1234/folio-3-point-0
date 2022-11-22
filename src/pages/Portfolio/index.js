@@ -2,16 +2,21 @@ import React, { useState } from "react";
 import Carousel from "react-bootstrap/Carousel";
 import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
-import AppModal from "../../components/AppModal";
+// import AppModal from "../../components/AppModal";
 
 function Portfolio() {
   const [show, setShow] = useState(false);
   const [content, setContent] = useState("");
 
   const handleClose = () => {
-   
-    setShow(false); setContent("")};
-  const handleShow = (event) => {setShow(true);  const index = event.target.getAttribute("index"); setContent(photos[index])}
+    setShow(false);
+    setContent("");
+  };
+  const handleShow = (event) => {
+    setShow(true);
+    const index = event.target.getAttribute("index");
+    setContent({ ...photos[index], index: index });
+  };
 
   const photos = [
     {
@@ -72,7 +77,7 @@ function Portfolio() {
       <div className="row">
         <Carousel variant="dark" className="col-md-8 m-auto">
           {photos.map((image, i) => (
-            <Carousel.Item interval={5000}>
+            <Carousel.Item interval={5000} key={i}>
               <img
                 className="w-100 thumbnail"
                 src={require(`../../assets/images/${i}.png`)}
@@ -89,33 +94,36 @@ function Portfolio() {
                   Learn More
                 </Button>
               </Carousel.Caption>
-              
-                
             </Carousel.Item>
           ))}
         </Carousel>
-
-        {/* {!image.app.length ? (
-                  <>
-                    <h4>
-                      <a href={image.repo}>Repo</a>
-                    </h4>
-                  </>
-                ) : (
-                  <>
-                    <h4>
-                      <a href={image.repo} target={`_blank`}>
-                        Repo
-                      </a>
-                      <span>|</span>
-                      <a href={image.app} target={`_blank`}>
-                        App
-                      </a>
-                    </h4>
-                  </>
-                )} */}
       </div>
-      <Modal show={show} onHide={handleClose}><AppModal content={content}/></Modal>
+      <Modal show={show} size="lg" onHide={handleClose}>
+        <Modal.Header closeButton>
+          <Modal.Title>{content.name}</Modal.Title>
+        </Modal.Header>
+        <Modal.Body><p>{content.description}</p>
+          <a href={content.repo}><Button variant="primary my-2">Repo</Button></a>
+        {content.app? (<a href={content.app}><Button variant="info mx-2">App</Button></a>) : (<></>)}
+          <>
+            {content.index ? (
+              <img
+                className="w-100 thumbnail"
+                src={require(`../../assets/images/${content.index}.png`)}
+                alt={"a"}
+              />
+            ) : (
+              <div></div>
+            )}
+          </>
+        </Modal.Body>
+        <Modal.Footer>
+        
+          <Button variant="secondary" onClick={handleClose}>
+            Close
+          </Button>
+        </Modal.Footer>
+      </Modal>
     </div>
   );
 }
