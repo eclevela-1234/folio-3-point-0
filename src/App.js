@@ -10,6 +10,7 @@ function App() {
     <div className="App bg-light">
       <Container>
         <NavbarEliot />
+        
         <Footer />
       </Container>
     </div>
