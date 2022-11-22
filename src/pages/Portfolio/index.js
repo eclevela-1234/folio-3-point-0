@@ -2,20 +2,22 @@ import React, { useState } from "react";
 import Carousel from "react-bootstrap/Carousel";
 import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
-// import AppModal from "../../components/AppModal";
 
 function Portfolio() {
   const [show, setShow] = useState(false);
   const [content, setContent] = useState("");
+  const [Interval, setInterval] = useState(5000);
 
   const handleClose = () => {
     setShow(false);
     setContent("");
+    setInterval(5000);
   };
   const handleShow = (event) => {
     setShow(true);
     const index = event.target.getAttribute("index");
     setContent({ ...photos[index], index: index });
+    setInterval(1000000);
   };
 
   const photos = [
@@ -77,7 +79,7 @@ function Portfolio() {
       <div className="row">
         <Carousel variant="dark" className="col-md-8 m-auto">
           {photos.map((image, i) => (
-            <Carousel.Item interval={5000} key={i}>
+            <Carousel.Item interval={Interval} key={i}>
               <img
                 className="w-100 thumbnail"
                 src={require(`../../assets/images/${i}.png`)}
@@ -102,9 +104,21 @@ function Portfolio() {
         <Modal.Header closeButton>
           <Modal.Title>{content.name}</Modal.Title>
         </Modal.Header>
-        <Modal.Body><p>{content.description}</p>
-          <a href={content.repo}><Button variant="primary my-2">Repo</Button></a>
-        {content.app? (<a href={content.app}><Button variant="info mx-2">App</Button></a>) : (<></>)}
+        <Modal.Body>
+          <p>{content.description}</p>{" "}
+          <p>
+            <strong>{content.languages}</strong>
+          </p>
+          <a href={content.repo}>
+            <Button variant="primary my-2">Repo</Button>
+          </a>
+          {content.app ? (
+            <a href={content.app}>
+              <Button variant="info mx-2">App</Button>
+            </a>
+          ) : (
+            <></>
+          )}
           <>
             {content.index ? (
               <img
@@ -113,12 +127,11 @@ function Portfolio() {
                 alt={"a"}
               />
             ) : (
-              <div></div>
+              <></>
             )}
           </>
         </Modal.Body>
         <Modal.Footer>
-        
           <Button variant="secondary" onClick={handleClose}>
             Close
           </Button>
