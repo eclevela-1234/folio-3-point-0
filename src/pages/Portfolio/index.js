@@ -68,11 +68,11 @@ function Portfolio() {
     <div>
       <h2 className="m-3">Portfolio</h2>
       <div className="row">
-        <Carousel variant="dark" className="col-md-8 m-auto">
+        <Carousel variant="dark rounded" className="col-md-8 m-auto">
           {photos.map((image, i) => (
             <Carousel.Item interval={Interval} key={i}>
               <img
-                className="w-100 thumbnail"
+                className="w-100 thumbnail border border-dark"
                 src={require(`../../assets/images/${i}.png`)}
                 alt={image.name}
               />
