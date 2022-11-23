@@ -39,24 +39,27 @@ function Portfolio() {
       app: "https://eclevela-1234.github.io/Random-Project-Generator",
     },
     {
+      name: "UR Business Dashboard",
+      description: "An interactive dashboard created using Plotly.js to bring to life sales and weather data. This was a final broject for my data analysis boot camp. The program, which I wrapped in 2021, focused mainly on data science concept and visualization. As I dive back into business analytics, I plan to create web apps with similar utility but with authentication and a more responsive front end by applying concepts learned in the Web Dev Program.",
+      languages: "",
+      repo: "https://github.com/eclevela-1234/My-Team-App",
+      app: "",
+    },
+    {
+      name: "Portfolio Designer",
+      description:
+        "A note taking app that uses API routes to update Create, Read, Update, and Delete a JSON file containing USER Notes. App is deployed to a Heroku Node envvironment",
+      languages: "Node.js, Express.js, Handlebars, Sequelize, MySQL, BCrypt, HTML5, CSS3, JavaScript",
+      repo: "https://github.com/eclevela-1234/portfolio-designer-2",
+      app: "https://peaceful-reef-87519.herokuapp.com/login",
+    },
+    {
       name: "Express Note Taker",
       description:
         "A note taking app that uses API routes to update Create, Read, Update, and Delete a JSON file containing USER Notes. App is deployed to a Heroku Node envvironment",
       languages: "Node.js, Express.js, RESTful API, HTML5, CSS3, JavaScript",
       repo: "https://github.com/eclevela-1234/Express-Note-Taker",
       app: "https://agile-dawn-36237.herokuapp.com/",
-    },
-    {
-      name: "Portfolio Designer",
-      repo: "https://github.com/eclevela-1234/portfolio-designer-2",
-      app: "https://peaceful-reef-87519.herokuapp.com/login",
-    },
-    {
-      name: "My Team App",
-      description: "",
-      languages: "",
-      repo: "https://github.com/eclevela-1234/My-Team-App",
-      app: "",
     },
     {
       name: "Reactions",
