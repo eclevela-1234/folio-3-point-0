@@ -76,8 +76,8 @@ function ContactForm() {
       
       <form id="contact-form" onSubmit={handleSubmit}>
         <div>
-          <label className="label m-1" htmlFor="name">
-            Name:
+          <label className="label m-1 d-block" htmlFor="name">
+            <div className="formLabel">Name:</div>
           </label>
           <input
             className="form-control"
@@ -88,8 +88,8 @@ function ContactForm() {
           />
         </div>
         <div>
-          <label className="label m-1" htmlFor="email">
-            Email address:
+          <label className="label m-1 d-block" htmlFor="email">
+          <div className="formLabel">Email address:</div>
           </label>
           <input
             className="form-control"
@@ -100,8 +100,8 @@ function ContactForm() {
           />
         </div>
         <div>
-          <label className="label m-1" htmlFor="name">
-            Message:
+          <label className="label m-1 d-block" htmlFor="name">
+          <div className="formLabel">Message:</div>
           </label>
           <textarea
             className="form-control"

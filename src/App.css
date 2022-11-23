@@ -63,3 +63,15 @@ a {
 #headline {
   text-decoration: none;
 }
+.blurb {
+  color: black;
+  text-align: left;
+  text-indent: 50px;
+}
+
+.formLabel {
+  text-shadow: 0 0 8px black;
+  text-align: left;
+  font-size: larger;
+  margin: 10px 0
+}

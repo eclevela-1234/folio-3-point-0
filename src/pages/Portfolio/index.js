@@ -24,7 +24,7 @@ function Portfolio() {
     {
       name: "Sub-Atomic",
       description:
-        "A gig work style app designed to make it easier for administrators to find substitute teachers. Utilizes a message board where users can generate and edit profiles and apply to substitute teaching jobs. Admins can post and delete jobs and are alerted when they receive applicants. This is a fully functional single page application with authentication utilizing the MERN stack(MongoDB, Express.js, React.js, Node.js).",
+        "A gig work style app designed to make it easier for administrators to find substitute teachers. Utilizes a message board where users can generate and edit profiles and apply to substitute teaching jobs. Admins can post and delete jobs and are alerted when they receive applicants. This is a fully functional single page application with authentication utilizing the MERN stack (MongoDB, Express.js, React.js, Node.js).",
       languages:
         "MongoDB, Express.js, React.js, Node.js, GraphQL, Apollo Server, Heroku, Bootstrap",
       repo: "https://github.com/eclevela-1234/Substitute-Finder",
