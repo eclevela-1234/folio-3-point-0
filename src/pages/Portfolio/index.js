@@ -42,7 +42,7 @@ function Portfolio() {
       name: "Business Metrics Dashboard",
       description:
         "An interactive dashboard created using Plotly.js to bring to life sales and weather data. This was a final project in the data analytics boot camp. Used Pandas to clean data and a variety of software packages for exploratory data analysis. As I dive back into business analytics, I plan to create web apps with similar utility but with authentication and a more responsive front end by applying concepts learned in the full stack program.",
-      languages: "HTML5, CSS3, JavaScript, Python, Pandas, Excel, Tableau",
+      languages: "HTML5, CSS3, JavaScript, Python, Pandas, Plotly, Excel, Tableau",
       repo: "https://github.com/eclevela-1234/Business-Metrics",
       app: "https://eclevela-1234.github.io/Business-Metrics",
     },
