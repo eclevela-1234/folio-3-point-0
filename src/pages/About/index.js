@@ -20,7 +20,7 @@ function About() {
           Richmond.{" "}
         </p>
         <p>
-          Proficient in JavaScript, HTML, CSS, Python coding languages in a
+          Proficient in JavaScript, HTML, CSS, and Python coding languages in a
           collaborative Git setting. Experience implementing SQL and MongoDB
           databases through object mappers in both Node and Python environments.
           Working knowledge of libraries such as Bootstrap, Bulma, jQuery,

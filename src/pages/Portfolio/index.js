@@ -98,11 +98,11 @@ function Portfolio() {
           <p>
             <strong>{content.languages}</strong>
           </p>
-          <a href={content.repo}>
+          <a href={content.repo} target={`_blank`}>
             <Button variant="primary my-2">Repo</Button>
           </a>
           {content.app ? (
-            <a href={content.app}>
+            <a href={content.app} target={`_blank`}>
               <Button variant="info mx-2">App</Button>
             </a>
           ) : (
